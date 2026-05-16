@@ -37,7 +37,7 @@ If this was a real product in the field, here is what would break my system:
 2. **Missing Data:** If the drone skips the autonomous flight test, the script might fail to compute a reliable health score because it currently expects all three flight modes to be completed.
 3. **Different Drone Models:** I hardcoded the limits (like max temp 80°C). If we use a massive industrial drone, its normal temperature might be 85°C, and my system would wrongly flag it as broken.
 
-## 4. How I Generated the Data (Realism)
+## 4. How I Generated the Data
 To make the synthetic data realistic, I made some physical assumptions:
 - **Payload Physics:** When the drone is loaded, I added math to make the motor temperature and vibration increase.
 - **Battery Drain:** Carrying a payload drains the battery much faster.
